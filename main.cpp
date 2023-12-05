@@ -346,6 +346,7 @@ void EXECUTE(vector<Instruction>& INST,
                                 // reset ISSUE latency for RS
                                 RESSTATION[r].ISSUE_Lat = 0;
                             }
+                            break;
                         case(SubOp):
                             if(RESSTATION[r].lat == ADD_Lat){
                                 RESSTATION[r].result = RESSTATION[r].Vj - RESSTATION[r].Vk;
@@ -366,6 +367,7 @@ void EXECUTE(vector<Instruction>& INST,
                                 // reset ISSUE latency for RS
                                 RESSTATION[r].ISSUE_Lat = 0;
                             }
+                            break;
                         case(DivOp):
                             if(RESSTATION[r].lat == DIV_Lat){
                                 RESSTATION[r].result = RESSTATION[r].Vj / RESSTATION[r].Vk;
@@ -376,6 +378,7 @@ void EXECUTE(vector<Instruction>& INST,
                                 // reset ISSUE latency for RS
                                 RESSTATION[r].ISSUE_Lat = 0;
                             }
+                            break;
                         default:
                             break;
                     }
